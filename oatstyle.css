@@ -1,0 +1,149 @@
+:root {
+    --background-color: #fffcdd;
+    --card-color: #f0c55b;
+    --text-color: #333;
+    --btn-color: #f0925b;
+}
+
+[data-theme="dark"] {
+    --background-color: #272727;
+    --card-color: #474747;
+    --text-color: #858585;
+    --btn-color: #9f9f9f;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: "Parkinsans", sans-serif;
+    color: var(--text-color);
+    height: 1000px;
+}
+
+.title {
+    background-color: var(--card-color);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+}
+
+.icon-container:hover {
+    transform: scale(1.3);
+}
+
+.home-icon {
+    width: 30px;
+    height: 50px;
+    background: url('https://img.icons8.com/ios-filled/50/home.png') no-repeat center;
+    background-size: contain;
+    margin-bottom: 10px;
+}
+
+.sun-icon {
+    width: 40px;
+    height: 50px;
+    background: url('https://img.icons8.com/ios-filled/50/light.png') no-repeat center;
+    background-size: contain;
+    margin-bottom: 10px;
+}
+
+.sun-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    position: absolute;
+    top: 30px;
+    right: 120px;
+}
+
+.sun-container:hover {
+    transform: scale(1.3);
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.oatimg {
+    border-radius: 30px;
+    width: 290px;
+    height: 400px;
+
+}
+.oatimg:hover{
+    transition-duration: 0.3s;
+    width: 330px;
+    height: 450px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5)
+}
+
+.ht {
+    width: 300px;
+}
+
+.py {
+    width: 100px;
+}
+
+.c {
+    width: 110px;
+}
+
+.dart {
+    width: 100px;
+}
+
+.symbol {
+    height: auto;
+    width: 50px;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    align-items: center;
+
+}
+
+
+.name {
+    text-align: center;
+}
+
+.aboutme {
+    text-align: center;
+    height: fit-content;
+    align-items: center;
+    background-color: var(--card-color);
+    border-radius: 30px;
+    padding: 10px
+}
+
+h2 {
+    text-align: center;
+    height: fit-content;
+    align-items: center;
+    background-color: var(--card-color);
+    border-radius: 30px;
+    padding: 10px
+}
+video{
+    display: flex;
+    justify-self: center;
+}

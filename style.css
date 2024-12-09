@@ -1,0 +1,134 @@
+:root {
+    --background-color: #fffcdd;
+    --card-color: #f0c55b;
+    --text-color: #333;
+    --btn-color:#f0925b;
+}
+
+[data-theme="dark"]{
+    --background-color: #272727;
+    --card-color: #474747;
+    --text-color: #858585;
+    --btn-color: #9f9f9f;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: "Parkinsans", sans-serif;
+    color: var(--text-color);
+    height: 1000px;
+}
+
+.title {
+    background-color: var(--card-color);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.head {
+    font-size: 50px;
+    text-align: center;
+    font-family: "Playwrite HR Lijeva", cursive;
+}
+
+.oat {
+    height: 400px;
+    width: 200px;
+    align-items: center;
+    background-color: var(--card-color);
+    border-radius: 30px;
+    padding: 10px;
+
+}
+
+img {
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+img:hover {
+    transition-duration: 0.2s;
+    border-radius: 100px;
+}
+
+button {
+    align-self: center;
+    margin-left: 50px;
+    border-radius: 10px;
+    height: 50px;
+    width: 100px;
+    background: var(--btn-color);
+}
+
+button:hover {
+    transition-duration: 0.3s;
+    cursor: pointer;
+    width: 120px;
+
+}
+
+h2 {
+    padding: 10px;
+    border-radius: 5px;
+    width: fit-content;
+    background: #fffdfd;
+    margin-left: 70px;
+}
+
+.ink {
+    height: 400px;
+    width: fit-content;
+    align-items: center;
+    background-color: var(--card-color);
+    gap: 10px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.all {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+}
+.icon-container:hover {
+    transform: scale(1.3);
+}
+.home-icon {
+    width: 30px;
+    height: 50px;
+    background: url('https://img.icons8.com/ios-filled/50/home.png') no-repeat center;
+    background-size: contain;
+    margin-bottom: 10px;
+}
+.sun-icon {
+    width: 40px;
+    height: 50px;
+    background: url('https://img.icons8.com/ios-filled/50/light.png') no-repeat center;
+    background-size: contain;
+    margin-bottom: 10px;
+}
+.sun-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    position: absolute;
+    top: 30px;
+    right: 120px;
+}
+.sun-container:hover {
+    transform: scale(1.3);
+}
